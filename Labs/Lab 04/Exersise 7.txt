@@ -1,0 +1,29 @@
+
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+double areaCalc(double l, double w, double &cost)
+{
+  double  pricePerSqrFt=.99, area= l*w;
+  cost = area*pricePerSqrFt;
+  return (area);
+}
+
+int main ()
+{
+  double length, width, sqrFT, costOfFlooring;
+
+  cout << "Please enter the length and width of room: ";
+
+  cin >> length >> width;  
+
+  cout << "your room is: " << areaCalc(length, width, costOfFlooring)  << " square feet"; 
+
+  cout << endl << "The cost of your flooring will be: $"
+       << costOfFlooring << endl;
+
+  system("pause");
+  return 0;
+}

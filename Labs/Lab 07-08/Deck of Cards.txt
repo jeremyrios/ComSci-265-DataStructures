@@ -1,0 +1,139 @@
+
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <ctype.h>
+using namespace::std;
+
+const int SUITS = 4;
+const int CARD_VALUES = 13;
+const int NUMBER_CARDS = 9;
+const int MAX_CHARACTERS = 2;
+
+struct cards //DeckOfCards
+{
+  char suit;
+  string cardValue;
+};
+
+void intializeDeck(cards deck[][CARD_VALUES]);
+void printDeck(cards deck[][CARD_VALUES]);
+void shuffleDeck(cards deck[][CARD_VALUES], int shuffledRow[], int shuffledColumn[]);
+
+
+
+int main()
+{
+  int shuffledRow[SUITS] = {0}, shuffledColumn[CARD_VALUES] = {0};
+
+  cards deck[SUITS][CARD_VALUES];
+  intializeDeck(deck);
+  printDeck(deck);
+  shuffleDeck(deck, shuffledRow, shuffledColumn);
+  printDeck(deck);
+
+  system("pause");
+  return 0;
+}
+
+void intializeDeck(cards deck[][CARD_VALUES])
+{
+  for (int i=0; i<SUITS; i++)
+  {
+    for (int j=0; j<CARD_VALUES; j++)
+    {
+      switch(i)
+      {
+      case 0:
+        deck[i][j].suit = 'H'; // H == Hearts
+        break;
+      case 1:
+        deck[i][j].suit = 'S'; // S == Spades
+        break;
+      case 2:
+        deck[i][j].suit = 'D'; // D == Diamonds
+        break;
+      case 3:
+        deck[i][j].suit  = 'C'; // C == Clubs
+        break;
+      }
+      if (j < NUMBER_CARDS-1)
+      {
+        deck[i][j].cardValue = j + 50; // ASCII CODE
+      }
+      else 
+      {
+        switch(j)
+        {
+        case NUMBER_CARDS-1:
+          deck[i][j].cardValue = "10"; 
+          break;
+        case NUMBER_CARDS:
+          deck[i][j].cardValue = "J"; 
+          break;
+        case NUMBER_CARDS + 1:
+          deck[i][j].cardValue = "Q"; 
+          break;
+        case NUMBER_CARDS + 2:
+          deck[i][j].cardValue = "K"; 
+          break;
+        case NUMBER_CARDS + 3:
+          deck[i][j].cardValue = "A"; 
+          break;
+        }
+      }
+    }
+  }
+}
+
+void printDeck(cards deck[][CARD_VALUES])
+{
+  for (int i=0; i<SUITS; i++)
+  {
+    cout << " ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----\n" << "|";
+    for (int j=0; j<CARD_VALUES; j++)
+    {
+      if (j < CARD_VALUES-1)
+      {
+        cout.width(3);
+        cout << deck[i][j].cardValue << deck[i][j].suit;
+        cout << " |";
+      }
+      else
+      {
+        cout.width(3);
+        cout << deck[i][j].cardValue <<  deck[i][j].suit << " |" << endl;
+      }
+    }
+  } 
+  cout <<  " ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----\n";
+  cout << endl;
+}
+
+void shuffleDeck(cards deck[][CARD_VALUES], int shuffledRow[], int shuffledColumn[])
+{
+  char charTemp;
+  string stringTemp;
+  int randomRow, randomColumn;
+  for(int i=SUITS-1; i>=0; i--)
+  {
+    for (int j=0; j<CARD_VALUES; j++) //--- Shuffle elements by randomly exchanging each with one other.
+    {     
+      randomRow = i + (rand() % (SUITS-i)); // Random remaining position.
+      randomColumn = i + (rand() % (CARD_VALUES-i)); // Random remaining position
+
+      stringTemp = deck[i][j].cardValue; 
+      charTemp = deck[i][j].suit;
+
+      deck[i][j].cardValue = deck[randomRow][randomColumn].cardValue; 
+      deck[i][j].suit = deck[randomRow][randomColumn].suit;
+
+      deck[randomRow][randomColumn].suit = charTemp;
+      deck[randomRow][randomColumn].cardValue = stringTemp;
+    }
+  }
+
+}
+

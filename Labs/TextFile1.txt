@@ -1,0 +1,60 @@
+
+
+/*
+int abslt(int num);
+long abslt(long num);
+float abslt(float num);
+double abslt(double num);
+
+int main()
+{
+  // Declaration and Initialization (assignment)
+  int intgr = -5;
+  long lng = 34225; 
+  float flt = -5.56;
+  double dbl = -45.6768;
+
+  cout << "absolute value of " << intgr << " = " << abslt(intgr) << endl;
+  cout << "absolute value of " << lng << " = " << abslt(lng) << endl;
+  cout << "absolute value of " << flt << " = " << abslt(flt) << endl;
+  cout << "absolute value of " << dbl << " = " << abslt(dbl) << endl;
+  system("pause");
+  return 0;
+}
+
+//Function Bodies
+int abslt(int num)
+{
+  if (num >=0)
+    return num;
+  else
+    return (-num);
+}
+
+//Function Bodies
+long abslt(long num)
+{
+  if (num >=0)
+    return num;
+  else
+    return (-num);
+}
+
+//Function Bodies
+float abslt(float num)
+{
+  if (num >=0)
+    return num;
+  else
+    return (-num);
+}
+
+//Function Bodies
+double abslt(double num)
+{
+  if (num >=0)
+    return num;
+  else
+    return (-num);
+}
+*/

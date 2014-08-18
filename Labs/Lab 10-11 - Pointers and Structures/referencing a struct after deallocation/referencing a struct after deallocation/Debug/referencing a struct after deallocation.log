@@ -1,0 +1,17 @@
+﻿Build started 10/10/2010 6:42:31 PM.
+     1>Project "M:\Computer Programing\COMSC 265\Labs\Lab 1011\referencing a struct after deallocation\referencing a struct after deallocation\referencing a struct after deallocation.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "M:\Computer Programing\COMSC 265\Labs\Lab 1011\referencing a struct after deallocation\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\referencing a struct after deallocation.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\referencing a struct after deallocation.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\referencing a struct after deallocation.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "referencing a struct after deallocation.cpp"
+         referencing a struct after deallocation.cpp
+     1>m:\computer programing\comsc 265\labs\lab 1011\referencing a struct after deallocation\referencing a struct after deallocation\referencing a struct after deallocation.cpp(27): error C2065: 'P1' : undeclared identifier
+     1>Done Building Project "M:\Computer Programing\COMSC 265\Labs\Lab 1011\referencing a struct after deallocation\referencing a struct after deallocation\referencing a struct after deallocation.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.45

@@ -1,0 +1,29 @@
+
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+template <typename T1>
+T1 square(T1 x)
+{
+  x *= x;
+  return x;
+}
+
+int main()
+{
+  // Declaration and Initialization 
+  int intgr = -4;
+  long lng = 2222; 
+  float flt = -8.88;
+  double dbl = -44.4444;
+
+  cout << intgr << " Squared = " << square(intgr) << endl;
+  cout << lng << " Squared = " << square(lng) << endl;
+  cout << flt << " Squared = " << square(flt) << endl;
+  cout << dbl << " Squared = " << square(dbl) << endl;
+  system("pause");
+  return 0;
+}
+

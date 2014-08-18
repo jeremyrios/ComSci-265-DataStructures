@@ -1,0 +1,21 @@
+﻿Build started 9/27/2010 4:58:14 PM.
+     1>Project "E:\Computer Programing\COMSC 265\Labs\Lab 78\Deck of Cards\Deck of Cards\Deck of Cards.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Deck of Cards.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\Deck of Cards.unsuccessfulbuild".
+         Touching "Debug\Deck of Cards.lastbuildstate".
+     1>Done Building Project "E:\Computer Programing\COMSC 265\Labs\Lab 78\Deck of Cards\Deck of Cards\Deck of Cards.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.76

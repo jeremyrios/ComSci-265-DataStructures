@@ -1,0 +1,10 @@
+Bob|Hope|96 Grove St|Brockton|MA|02302|888-624-9266|$20,295|Democratic|
+Barbara|Day|4 Amber Grain Ct|O Fallon|MO|63368|877-823-2565|$34,335|Republican|
+Naomi|Fern|116 Dale Ave Apt B|Melbourne|FL|32935|866-692-6447|$63,840|Libertarian|
+David|Park|74 Sevilla Dr|Los Altos|CA|94022|313-438-2812|$48,375|Democratic|
+Adella|Smith|162 Hidden Blf|Smithville|TX|78957|202-293-1966|$31,590|Democratic|
+Charles|Jones|3255 Seminole Trl|Monroe|MI|48162|714-647-2465|$55,395|Republican
+Scott|Miller|921 S 8th Ave|Kelso|WA|98626|310-252-7100|877-851-7443|$27,315|Libertarian|
+Laurie|Davis|1016 Frank Bailey Rd|Wake Forest|NC|27587|416-866-8866|$69,435|Democratic|
+Jose|Garcia|1819 W Cheyenne Dr|Chandler|AZ|85224|435-723-9901|$44,490|Green|
+Cynthia|Brown|2002 Richmond Rd|Toledo|OH|43607|519-846-8786|$62,415|Republican|

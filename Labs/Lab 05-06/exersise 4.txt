@@ -1,0 +1,82 @@
+
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+// Function Prototypes
+void Enter5Element(double doubleArray[], int ARRAY_SIZE, double UPPER_LIMIT, double LOWER_LIMIT);
+double AddElements(double doubleArray[], int sizeOfArray);
+double MultiplyElements(double doubleArray[], int sizeOfArray);
+void PrintElements(double doubleArray[], int sizeOfArray, double sum, double product);
+
+// Main
+int main ()
+{
+  int i; 
+  int const ARRAY_SIZE = 5;
+  double UPPER_LIMIT = 10.00, LOWER_LIMIT = -10.00;
+  double sum = 0, product = 0, doubleArray[ARRAY_SIZE] = {0};
+
+  Enter5Element(doubleArray, ARRAY_SIZE, UPPER_LIMIT, LOWER_LIMIT);
+  
+  sum = AddElements(doubleArray, ARRAY_SIZE);
+
+  product = MultiplyElements(doubleArray, ARRAY_SIZE);
+
+  PrintElements(doubleArray, ARRAY_SIZE, sum, product);
+      
+  system("pause");
+  return 0;
+}
+
+// Function that asks for and accepts 5 user define numbers between -10 and 10
+void Enter5Element(double doubleArray[], int ARRAY_SIZE, double UPPER_LIMIT, double LOWER_LIMIT)
+{
+  cout << "Please enter " << ARRAY_SIZE << " numbers between -10 and 10" << endl;
+  for(int i=0; i<ARRAY_SIZE; i++)//ARRAY_SIZE = 5
+  {
+    cout << i+1 << ": ";
+    cin >> doubleArray[i];
+    // cheks to veify input is between -10 and 10
+    while (doubleArray[i] < LOWER_LIMIT || doubleArray[i] > UPPER_LIMIT)
+    {
+      cout << "Please Try again. Your number was not between -10 and 10" << endl << i+1 << ": ";
+      cin >> doubleArray[i];
+    }
+  } 
+}
+
+// Function calculates the sum of the 5 user defined numbers and returs answer to main()
+double AddElements(double doubleArray[], int ARRAY_SIZE)
+{
+  double answer = 0;
+  for(int i=0; i<ARRAY_SIZE; i++)//ARRAY_SIZE = 5
+  {
+    answer += doubleArray[i];
+  } 
+  return answer;
+}
+
+// Function calculates the product of the 5 user defined numbers and returs answer to main()
+double MultiplyElements(double doubleArray[], int ARRAY_SIZE)
+{
+  double answer = 1;
+  for(int i=0; i<ARRAY_SIZE; i++)//ARRAY_SIZE = 5
+  {
+    answer *= doubleArray[i];
+  } 
+  return answer;
+}
+
+// Function prints out the 5 user defined numbers along with their sum and product
+void PrintElements(double doubleArray[], int ARRAY_SIZE, double sum, double product)
+{
+  cout << endl << "For the given numbers" << endl;
+  for(int i=0; i<ARRAY_SIZE; i++)//ARRAY_SIZE = 5
+  {
+    cout << i+1 << ": " << doubleArray[i] << endl;
+  } 
+  cout << endl << "The sum is: " << sum << " & the product is: " 
+       << product << endl << endl;
+}

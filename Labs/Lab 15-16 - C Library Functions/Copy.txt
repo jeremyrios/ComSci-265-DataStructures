@@ -1,0 +1,35 @@
+// Jeremy Rios-Martinez
+// Comsc 265
+// assighnment 15-16
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+const int MAX_CHAR = 10;
+
+void Copy(char *s1, char *s2);
+
+int main()
+{
+
+	char str1[MAX_CHAR] = {"apple"};
+	char str2[MAX_CHAR] = {"banana"};
+	
+	cout << "Before copy str1: " << str1 << " and str2: " << str2 << endl;
+	Copy(str1, str2);
+	cout << "After copy str1: " << str1 << " and str2: " << str2 << endl;
+
+	system ("pause");
+	return 0;
+}
+
+void Copy(char *s1, char *s2)
+{
+	int i;
+	for(i=0; s2[i]; i++)
+	{
+      s1[i] = s2[i];
+	} 
+	s1[++i] = '\n';
+}

@@ -1,0 +1,5 @@
+The average is: 41
+There are 53 numbers greater than the average.
+There are 47 numbers less than the average.
+The maximum number is: 95
+The minimum number is: 1

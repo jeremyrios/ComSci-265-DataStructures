@@ -1,0 +1,37 @@
+1001,Joe,Smith,Tv,1500.00,51" Sony Plasma HD,1
+1001,Joe,Smith,Leggings,20.00,Iron Leggings,1
+1001,Joe,Smith,Bracelet,300.00,Silver Aquamarine Bracelet,1
+1001,Joe,Smith,Charm,50.00,Silver Ruby Charm,1
+1001,Joe,Smith,Jeans,15.00,Wrangler Jeans,1
+1001,Joe,Smith,Darts,4.00,Pro Tip Darts,6
+2592,Penelope,Fessenden,Gloves,70.00,Silk Gloves,1
+2592,Penelope,Fessenden,Helm,700.00,Iron Battle Helm,1
+2592,Penelope,Fessenden,Earrings,500.00,Platinum Earrings,1
+2592,Penelope,Fessenden,Throwing Stars,400.00,Silver Throwing Stars,10
+2592,Penelope,Fessenden,dvd,20.00,fight club dvd,1
+2592,Penelope,Fessenden,shoes,65.00,rock climbing shoes,1
+2458,Kelly,Maliszewski,bird feeder,85.00,Martha Stuart Bird Feeder,1
+2458,Kelly,Maliszewski,spice rack,18.00,Wooden spice rack,1
+2458,Kelly,Maliszewski,chocolate,8.00,chocolate truffles,1
+2458,Kelly,Maliszewski,wig,48.00,mullet wig,1
+2458,Kelly,Maliszewski,drapes,90.00,Silk drapes,4
+2458,Kelly,Maliszewski,leaf blower,99.00,craftsman leaf blower,1
+4895,Jamie,Rosol,diapers,22.00,huggies diapers,24
+4895,Jamie,Rosol,jersey,120.00,larry bird jersey,1
+4895,Jamie,Rosol,bumper sticker,5.00,have a nice day bumper sticker,1
+4895,Jamie,Rosol,CD,11.00,bob dylan CD,1
+4895,Jamie,Rosol,bike lock,17.00,master bike lock,1
+4895,Jamie,Rosol,shoes,8.00,baby shoes,1
+5962,Darryl,Timbers,alarm clock,45.00,zen alarm clock,1
+5962,Darryl,Timbers,briefcases,250.00,leather briefcases,1
+5962,Darryl,Timbers,rug,600.00,egyptian handmade rug,1
+5962,Darryl,Timbers,washer dryer combo,1700.00,maytag washer dryer combo,1
+5962,Darryl,Timbers,golf balls,50.00,nike golf balls,9
+5962,Darryl,Timbers,flat panel monitor,400.00,samsung flat panel monitor,1
+5962,Darryl,Timbers,belt sander,135.00,dewalt belt sander,1
+1548,Allie,Mieles,t-shirt,20.00, superman t-shirt,1
+1548,Allie,Mieles,blanket,65.00,fleeece blanket,1
+1548,Allie,Mieles,g.i. joe,16.00,g.i. joe the real american hero,1
+1548,Allie,Mieles,toaster,95.00,delonghi toaster,1
+1548,Allie,Mieles,earrings,480.00,diamond earrings,2
+1548,Allie,Mieles,fly swatter,35.00,G.E. electric fly swatter,1

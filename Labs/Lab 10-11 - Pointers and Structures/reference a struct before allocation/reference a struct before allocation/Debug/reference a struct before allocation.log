@@ -1,0 +1,17 @@
+﻿Build started 10/10/2010 7:13:34 PM.
+     1>Project "M:\Computer Programing\COMSC 265\Labs\Lab 1011\reference a struct before allocation\reference a struct before allocation\reference a struct before allocation.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "M:\Computer Programing\COMSC 265\Labs\Lab 1011\reference a struct before allocation\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\reference a struct before allocation.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\reference a struct before allocation.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\reference a struct before allocation.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "reference a struct before allocation.cpp"
+         reference a struct before allocation.cpp
+     1>m:\computer programing\comsc 265\labs\lab 1011\reference a struct before allocation\reference a struct before allocation\reference a struct before allocation.cpp(27): error C2065: 'P1' : undeclared identifier
+     1>Done Building Project "M:\Computer Programing\COMSC 265\Labs\Lab 1011\reference a struct before allocation\reference a struct before allocation\reference a struct before allocation.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.04

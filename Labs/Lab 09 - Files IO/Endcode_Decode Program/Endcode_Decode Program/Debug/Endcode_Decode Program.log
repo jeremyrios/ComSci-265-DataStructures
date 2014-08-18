@@ -1,0 +1,21 @@
+﻿Build started 9/29/2010 3:59:11 PM.
+     1>Project "E:\Computer Programing\COMSC 265\Labs\Lab 9\Endcode_Decode Program\Endcode_Decode Program\Endcode_Decode Program.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Endcode_Decode Program.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\Endcode_Decode Program.unsuccessfulbuild".
+         Touching "Debug\Endcode_Decode Program.lastbuildstate".
+     1>Done Building Project "E:\Computer Programing\COMSC 265\Labs\Lab 9\Endcode_Decode Program\Endcode_Decode Program\Endcode_Decode Program.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.12

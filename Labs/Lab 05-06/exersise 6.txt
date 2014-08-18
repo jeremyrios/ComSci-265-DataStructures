@@ -1,0 +1,41 @@
+
+
+#include "stdafx.h"
+#include <iostream> 
+#include<string>
+using namespace std;
+
+int main()
+{
+  char wholeLine[100];
+  cout <<"Enter a word or sentence and I'll tell you if it's a Palindrome" <<endl << ": ";
+  cin.getline(wholeLine, 80);
+  int lengthOfInput = strlen(wholeLine);
+  bool Palindrome = true; 
+
+  for(int i=0, j=lengthOfInput-1; i<(lengthOfInput/2) && Palindrome; i++, j--) 
+  {
+    if (wholeLine[i] == ' ')
+    {
+      i++;
+    }
+    if (wholeLine[j] == ' ')
+    {
+      j--;
+    }
+    if(wholeLine[i] != wholeLine[j]) 
+    {
+      Palindrome = false; 
+    }
+  }
+  if(Palindrome)
+  {
+    cout << endl << "That is a Palindrome" << endl;
+  }
+  else
+  {
+    cout << endl << "Im sorry but that is not a Palindrome" << endl;
+  }
+  system("pause");
+  return 0;
+}

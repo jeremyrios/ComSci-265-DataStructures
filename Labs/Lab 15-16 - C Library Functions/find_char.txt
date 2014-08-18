@@ -1,0 +1,44 @@
+// Jeremy Rios-Martinez
+// Comsc 265
+// assighnment 15-16
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+char *FindChar(char *s, char c);
+
+int main()
+{
+	int lengthOfString;
+	char *pfirst_occur;
+	char letter = 'r';
+	char str[] = {"test string"};
+	pfirst_occur = FindChar(str, 'r');
+	cout << "In the string \"" << str << "\" the first occurence of \'" 
+		 << *pfirst_occur << "\' is at addres " << &pfirst_occur << endl;
+	system ("pause");
+	return 0;
+}
+
+char *FindChar(char *s, char c)
+{
+	int i, letter1, letter2;
+	letter1 = (int)c;
+	for(i=0; s[i]; i++)
+		{
+			letter2 = (int)*(s+i);
+			if(letter1 == letter2)
+			{
+				break;
+			}
+	    }
+        if(s[i])
+        {
+		return NULL;
+	}
+	else
+	{
+		return &s[i];
+	}
+}

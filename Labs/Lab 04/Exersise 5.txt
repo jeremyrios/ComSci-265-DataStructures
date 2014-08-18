@@ -1,0 +1,23 @@
+
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+double costOfFlooring(double l=1, double w=1, double price=.99)
+{
+  return (l*w*price);
+}
+
+int main ()
+{
+  double length, width, pricePerSqrFt;
+
+  cout << "Please enter the length and width of room: ";
+  cin >> length >> width;  
+  cout << endl << "The cost of your flooring will be: $"
+       << costOfFlooring(length, width) << endl;
+
+  system("pause");
+  return 0;
+}

@@ -1,0 +1,25 @@
+
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+void funct(int a, int &b)
+{
+  a=10;
+  b=16;
+}
+
+int main ()
+{
+  int A=5, B=8;
+ 
+  cout << A << " " << B << endl;  
+
+  funct(A, B);
+
+  cout << A << " " << B << endl; // A is still 5 but B is now 16 
+
+  system("pause");
+  return 0;
+}

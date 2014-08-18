@@ -1,0 +1,48 @@
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+int squareInt(int num);
+long squareLong(long num);
+float squareFloat(float num);
+double squareDouble(double num);
+
+int main()
+{
+  int intgr = -4;
+  long lng = 2222; 
+  float flt = -8.88;
+  double dbl = -44.4444;
+
+  cout << intgr << " Squared = " << squareInt(intgr) << endl;
+  cout << lng << " Squared = " << squareLong(lng) << endl;
+  cout << flt << " Squared = " << squareFloat(flt) << endl;
+  cout << dbl << " Squared = " << squareDouble(dbl) << endl;
+  system("pause");
+  return 0;
+}
+
+int squareInt(int num)
+{
+  num *= num;
+  return num;
+}
+
+long squareLong(long num)
+{
+  num *= num;
+  return num;
+}
+
+float squareFloat(float num)
+{
+  num *= num;
+  return num;
+}
+
+double squareDouble(double num)
+{
+  num *= num;
+  return num;
+}

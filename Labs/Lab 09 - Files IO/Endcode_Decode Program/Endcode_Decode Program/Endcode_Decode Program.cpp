@@ -1,0 +1,163 @@
+// Endcode_Decode Program.cpp
+// Jeremy Rios-Martinez
+// COMSC265
+// 9/27/2010
+
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+#include <sstream>
+#include <string>
+#include <fstream>
+using namespace std;
+
+const string DIRECTORY("E:\\Computer Programing\\COMSC 265\\Labs\\Lab 9\\Endcode_Decode Program\\");
+
+int getOption(string *inputFileName, string *outputFileName);
+void encoder_decoder(string *inputFileName, string *outputFileName, int option);
+
+int main()
+{
+  int option;
+  const int EXIT = 3;
+  string inputFileName, outputFileName;
+  bool loop = true;
+  while(loop)
+  {
+    option = getOption(&inputFileName, &outputFileName);
+    if(option==EXIT)
+    {
+      loop = false;
+    }
+    else
+    {
+      encoder_decoder(&inputFileName, &outputFileName, option);
+    }
+  }
+  system("pause");
+  return 0;
+}
+
+int getOption(string *inputFileName, string *outputFileName)
+{
+  bool loop = true, verify;
+  int option;
+  char answer;
+  
+  string temp;
+  while(loop)
+  {
+    cout << endl << "Enter 1 to Encode, 2 to Decode, or 3 to exit\nEntry: ";
+    cin >> option;
+    while (option<1 || option>3) 
+    {
+      cout << endl << "Im sorry but you did not enter a valid option\n"
+        << "Enter 1 to Encode, 2 to Decode, or 3 to exit\nEntry: ";
+      cin >> option;
+    }
+    if(option !=3)
+    {
+      verify = false;
+      while(!verify)
+      {
+        cout << endl << "Please enter input file name" << endl;
+        fflush(stdin);
+        getline(cin, temp);
+        cout << endl << "You enetered \"" << temp << "\" is this correct (y or n)?\nEntry:";
+        cin >> answer;
+        if(answer == 'y')
+        {
+          inputFileName -> clear();
+          *inputFileName += DIRECTORY; 
+          *inputFileName += temp;
+          verify = true;
+        }
+      }
+
+      verify = false;
+      while(!verify)
+      {
+        cout << endl << "Please enter output file name\n";
+        fflush(stdin);
+        getline(cin, temp);
+        cout << endl << "You enetered \"" << temp << "\" is this correct (y or n)?\nEntry:";
+        cin >> answer;
+        if(answer == 'y')
+        {
+          outputFileName -> clear();
+          *outputFileName += DIRECTORY;
+          *outputFileName += temp;
+          verify = true;
+        }
+      }
+      loop = false;
+    }
+    else
+    {
+      loop = false;
+    }
+  }
+  return (option);
+}
+
+void encoder_decoder(string *inputFileName, string *outputFileName, int option)
+{
+  bool ENCODE = false;
+  if(option == 1)
+  {
+    ENCODE = true;
+  }
+  int i, encodedCharacter, decodedCharacter;
+  string str, wholeLine;
+  ifstream fin;
+  fin.open(*inputFileName);
+  ofstream fout;
+  fout.open(*outputFileName);
+
+  if(fin.is_open())
+  {
+    if(fout.is_open())
+    {
+      if(ENCODE)
+      {
+        cout << endl << "Your Eecoded Message is:\n\n";
+        while(!fin.eof())
+        {
+          getline(fin, str);
+          for (i=0; i<str.length(); i++)
+          {
+            cout << hex << showbase << (int)str[i] << " ";
+            fout << hex << showbase << (int)str[i] << " ";
+          }
+        }
+        cout << endl << endl;
+      }
+      else
+      {
+        cout << endl << "Your Decoded Message is:\n\n";
+        fin >> setbase (16);
+        while(!fin.eof())
+        {
+          fin >> encodedCharacter;  
+          str = encodedCharacter;
+          cout << str;
+          fout << str;
+          encodedCharacter = 0;
+        }
+        fin >> setbase (10);
+        cout << endl << endl;
+      }
+      fout.close();
+    }
+    else
+    {
+      cout << endl << "Unable to open the output file";
+    }
+    fin.close();
+  }
+  else
+  {
+    cout << endl << "Unable to open the input file";
+  }
+}
+

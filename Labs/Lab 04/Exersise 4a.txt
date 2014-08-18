@@ -1,0 +1,30 @@
+
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+template <typename T1>
+int minimum(T1 a, int b)
+{
+  return(b>a ? a:b);
+}
+
+int main ()
+{
+  int i=33, j = 34;
+  float  u=32.1, v=32.2;
+  double x=3.32212, y=3.32213;
+
+  cout << "between the numbers " << i << " and " << j
+       << endl << minimum(i,j) << " is the smallest" << endl;
+
+  cout << "between the numbers " << u << " and " << v
+       << endl << minimum(u,v) << " is the smallest"<< endl;
+
+  cout << "between the numbers " << x << " and " << y
+       << endl << minimum(x,y) << " is the smallest"<< endl;
+
+  system("pause");
+  return 0;
+}

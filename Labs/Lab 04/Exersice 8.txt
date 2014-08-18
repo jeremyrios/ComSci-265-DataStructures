@@ -1,0 +1,21 @@
+
+Qestion 1
+      Templates help in code reuse by eliminating the need to create 
+    multiple funtions that do the same thing but are able to handle 
+    different data types.
+
+Question 2
+      Because because the compiler automatically generates code for 
+    each new type that is required, if there is a subtle error in the template 
+    it coudle potentially spiderweb errors througout your code.
+
+question 3
+      It names the functions by combining the identifier and the tpye
+
+Question 4
+      Reference parameters work by pointing to the address where the parameter data is contained. 
+    
+Extra credit
+     1. typeid().name()
+     2. sizeof()
+ 

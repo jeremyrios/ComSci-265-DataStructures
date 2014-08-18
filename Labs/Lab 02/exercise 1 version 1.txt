@@ -1,0 +1,26 @@
+// Age_Verification_For_Cigarettes1.cpp
+// Author: Jeremy Rios-Martinez  
+// Course: COMSC 265
+
+#include "stdafx.h"
+#include <iostream> 
+using std::cin;
+using std::cout; 
+using std::endl;
+
+int main(void)
+{
+  int customerAge;
+  cout << "Enter age of customer: ";
+  cin >> customerAge;
+  if (customerAge < 18)
+  {
+    cout << "Im sorry but you are not old enough to purchase tobaco products" << endl;
+  }
+  else
+  {
+    cout << "Thank you for you purchase and enjoy lung cancer " << endl;
+  }
+  system ("pause");
+  return 0;
+}

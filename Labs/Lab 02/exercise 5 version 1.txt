@@ -1,0 +1,26 @@
+// Exercise_5_version_1.cpp
+// Author: Jeremy Rios-Martinez  
+// Course: COMSC 265
+
+#include "stdafx.h"
+#include <iostream> 
+using std::cin;
+using std::cout; 
+using std::endl;
+
+int main(void)
+{
+  int A = 1, B = 5, C;
+
+  if (C < A && < B)
+  {
+    Do some thing;
+  }
+  else
+  {
+    Do something else.
+  }
+  system ("pause");
+  return 0;
+}
+

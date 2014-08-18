@@ -1,0 +1,21 @@
+// Exercise_4_version_1.cpp
+// Author: Jeremy Rios-Martinez  
+// Course: COMSC 265
+
+#include "stdafx.h"
+#include <iostream> 
+using std::cin;
+using std::cout; 
+using std::endl;
+
+int main(void)
+{
+  bool A = true, B = true, C = true;
+
+  if ((A && !B) || (A && !(B || C)) || (B && !(B || C)))
+  {
+    Do some thing;
+  }
+  system ("pause");
+  return 0;
+}

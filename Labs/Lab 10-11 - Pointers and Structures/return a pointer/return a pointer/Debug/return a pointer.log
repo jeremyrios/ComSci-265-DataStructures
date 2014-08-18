@@ -1,0 +1,33 @@
+﻿Build started 10/10/2010 6:52:24 PM.
+     1>Project "M:\Computer Programing\COMSC 265\Labs\Lab 1011\return a pointer\return a pointer\return a pointer.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "M:\Computer Programing\COMSC 265\Labs\Lab 1011\return a pointer\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\return a pointer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\return a pointer.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\return a pointer.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "return a pointer.cpp"
+         return a pointer.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\return a pointer.exe.embed.manifest.res" "Debug\return a pointer_manifest.rc" 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"M:\Computer Programing\COMSC 265\Labs\Lab 1011\return a pointer\Debug\return a pointer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\return a pointer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"M:\Computer Programing\COMSC 265\Labs\Lab 1011\return a pointer\Debug\return a pointer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"M:\Computer Programing\COMSC 265\Labs\Lab 1011\return a pointer\Debug\return a pointer.lib" /MACHINE:X86 "Debug\return a pointer.exe.embed.manifest.res"
+         "Debug\return a pointer.obj"
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\return a pointer.exe.embed.manifest" /manifest "Debug\return a pointer.exe.intermediate.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\return a pointer.exe.embed.manifest.res" "Debug\return a pointer_manifest.rc" 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"M:\Computer Programing\COMSC 265\Labs\Lab 1011\return a pointer\Debug\return a pointer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\return a pointer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"M:\Computer Programing\COMSC 265\Labs\Lab 1011\return a pointer\Debug\return a pointer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"M:\Computer Programing\COMSC 265\Labs\Lab 1011\return a pointer\Debug\return a pointer.lib" /MACHINE:X86 "Debug\return a pointer.exe.embed.manifest.res"
+         "Debug\return a pointer.obj"
+         Debug\stdafx.obj
+         return a pointer.vcxproj -> M:\Computer Programing\COMSC 265\Labs\Lab 1011\return a pointer\Debug\return a pointer.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\return a pointer.unsuccessfulbuild".
+         Touching "Debug\return a pointer.lastbuildstate".
+     1>Done Building Project "M:\Computer Programing\COMSC 265\Labs\Lab 1011\return a pointer\return a pointer\return a pointer.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:19.01

@@ -1,0 +1,52 @@
+﻿Build started 9/30/2010 7:35:50 PM.
+     1>Project "M:\Computer Programing\COMSC 265\Labs\Lab 9\Merge File Program\Merge File Program\Merge File Program.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Merge File Program.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Merge File Program.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "Merge File Program.cpp"
+         Merge File Program.cpp
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(56): error C2664: 'getRecords' : cannot convert parameter 1 from 'const std::string *' to 'std::string *'
+                 Conversion loses qualifiers
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(57): error C2664: 'getLetter' : cannot convert parameter 1 from 'const std::string *' to 'std::string *'
+                 Conversion loses qualifiers
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(58): error C2664: 'mergeFiles' : cannot convert parameter 1 from 'const std::string *' to 'std::string *'
+                 Conversion loses qualifiers
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(79): error C2228: left of '.find' must have class/struct/union
+                 type is 'char [100]'
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(83): error C2228: left of '.find' must have class/struct/union
+                 type is 'char [100]'
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(88): error C2228: left of '.find' must have class/struct/union
+                 type is 'char [100]'
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(93): error C2228: left of '.find' must have class/struct/union
+                 type is 'char [100]'
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(98): error C2228: left of '.find' must have class/struct/union
+                 type is 'char [100]'
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(103): error C2228: left of '.find' must have class/struct/union
+                 type is 'char [100]'
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(107): error C2228: left of '.find' must have class/struct/union
+                 type is 'char [100]'
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(112): error C2228: left of '.find' must have class/struct/union
+                 type is 'char [100]'
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(117): error C2228: left of '.find' must have class/struct/union
+                 type is 'char [100]'
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(139): error C2664: 'std::basic_istream<_Elem,_Traits> &std::basic_istream<_Elem,_Traits>::getline(_Elem *,std::streamsize)' : cannot convert parameter 1 from 'std::string' to 'char *'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>m:\computer programing\comsc 265\labs\lab 9\merge file program\merge file program\merge file program.cpp(186): error C2664: 'std::basic_string<_Elem,_Traits,_Ax>::copy' : cannot convert parameter 1 from 'std::string' to 'char *'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>Done Building Project "M:\Computer Programing\COMSC 265\Labs\Lab 9\Merge File Program\Merge File Program\Merge File Program.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.34

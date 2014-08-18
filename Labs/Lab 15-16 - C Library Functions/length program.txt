@@ -1,0 +1,29 @@
+// Jeremy Rios-Martinez 
+// Comps 265
+// assignment 15-16
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+int Length(char *s);
+
+int main()
+{
+	int lengthOfString;
+	char str[] = {"test string"};
+	lengthOfString = Length(str);
+	cout << "The string \"" << str << "\" has " << lengthOfString << " characters." << endl;
+	system ("pause");
+	return 0;
+}
+
+int Length(char *s)
+{
+	int i = 0;
+	while(s[i])
+		{
+			i++;
+	    } 
+	return i;
+}

@@ -1,0 +1,44 @@
+// Age_Verification_For_Cigarettes4.cpp
+// Author: Jeremy Rios-Martinez  
+// Course: COMSC 265
+// Last Modified by: Jeremy Rios-Martinez       
+// Date Last Modified: August 29, 2010 
+// Program Description: 
+//   Program accepts a user defined age then determines 
+//   if customer old enough to purchase tobaco products.
+// Note:
+//   The legal age to purchase tobaco products in the U.S is 18 and older.
+
+#include "stdafx.h"
+#include <iostream> 
+using std::cin;
+using std::cout; 
+using std::endl;
+
+#define LEGAL_AGE 18
+
+int main(void)
+{
+  int customerAge, exit;
+  bool loop = true;
+  while (loop)
+  {
+    cout << "Enter age of customer: ";
+    cin >> customerAge;
+    if (customerAge < LEGAL_AGE) // LEGAL_AGE = 18
+    {
+      cout << "Im sorry but you are not old enough to purchase tobaco products" << endl;
+    }
+    else
+    {
+      cout << "Thank you for you purchase and enjoy lung cancer " << endl;
+    }
+    cout >> "enter the number 1 to exit the program or enter the number 2 to run again: ";
+    if (exit == 1)
+    {
+      loop = false;
+    }
+  }
+  system ("pause");
+  return 0;
+}

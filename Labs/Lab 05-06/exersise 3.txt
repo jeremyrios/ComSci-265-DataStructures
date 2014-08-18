@@ -1,0 +1,21 @@
+
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+int main ()
+{
+  int i;
+  char charArray2[100];
+  for(i=0;i<100;i++)
+  {
+    charArray2[i] = ' ';
+  }
+  for(i=0;i<500;i++)
+  {
+    cout << charArray2[i] << endl;
+  }      
+  system("pause");
+  return 0;
+}

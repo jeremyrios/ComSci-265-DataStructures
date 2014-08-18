@@ -1,0 +1,50 @@
+
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+int square(int num);
+long square(long num);
+float square(float num);
+double square(double num);
+
+int main()
+{
+  // Declaration and Initialization (assignment)
+  int intgr = -4;
+  long lng = 2222; 
+  float flt = -8.88;
+  double dbl = -44.4444;
+
+  cout << intgr << " Squared = " << square(intgr) << endl;
+  cout << lng << " Squared = " << square(lng) << endl;
+  cout << flt << " Squared = " << square(flt) << endl;
+  cout << dbl << " Squared = " << square(dbl) << endl;
+  system("pause");
+  return 0;
+}
+
+int square(int num)
+{
+  num *= num;
+  return num;
+}
+
+long square(long num)
+{
+  num *= num;
+  return num;
+}
+
+float square(float num)
+{
+  num *= num;
+  return num;
+}
+
+double square(double num)
+{
+  num *= num;
+  return num;
+}
